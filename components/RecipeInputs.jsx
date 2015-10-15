@@ -2,16 +2,19 @@ var RecipeInputs = React.createClass({
 	render: function(){
 		return (
 			<div className="bothForms">
-				<form action="" name="stepForm">
-					<input type="text" name="recipeName" placeholder="Recipe Name"/>
-					<input type="text" name="step" placeholder="Add Step"/>
-					<input type="text" name="timer" placeholder="Timer 10:30 minutes:seconds"/>
+				<form name="recipeNameForm">
+					<InputField name="recipeName">Recipe Name</InputField>
+				</form>
+				<form name="stepForm">
+					<InputField name="step">Add Step</InputField>
+					<InputField name="instructions">Instructions</InputField>
+					<InputField name="timer">Timer 10:30 minutes:seconds</InputField>
 					<button>Add Step</button>
 				</form>
-				<form action="" name="ingredientForm">
-					<input type="text" name="name" placeholder="Ingredient Name"/>
-					<input type="text" name="qty" placeholder="Ingredient Quantity"/>
-					<input type="text" name="step" placeholder="Add Ingredient"/>
+				<form name="ingredientForm">
+					<InputField name="name">Ingredient Name</InputField>
+					<InputField name="qty">Ingredient Quantity</InputField>
+					
 					<button>Add Ingredient</button>
 				</form>
 			</div>
